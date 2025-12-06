@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-	base: '/lab3/',
+	base: '/web-lab3/',
 	build: {
 		rollupOptions: {
 			input: {
