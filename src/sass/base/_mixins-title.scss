@@ -1,0 +1,10 @@
+@use "./_colors.scss" as *;
+
+@mixin title {
+	color: $dark;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+

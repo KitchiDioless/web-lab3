@@ -1,0 +1,63 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/_media-queries.scss" as *;
+
+.title-h1-italic {
+	@include title;
+	font-size: 24px;
+	font-style: italic;
+}
+
+.h2-default {
+	@include title;
+	font-weight: 500;
+	font-size: 40px;
+	text-align: center;
+}
+
+.h3-default {
+	@include title;
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+}
+
+@include media-lg {
+	.h2-default {
+		font-size: 40px;
+	}
+	
+	.h3-default {
+		font-size: 24px;
+	}
+}
+
+@include media-md {
+	.h2-default {
+		font-size: 40px;
+	}
+
+	.h3-default {
+		font-size: 24px;
+	}
+}
+
+@include media-sm {
+	.h2-default {
+		font-size: 36px;
+	}
+
+	.h3-default {
+		font-size: 24px;
+	}
+}
+
+@include media-xs {
+	.h2-default {
+		font-size: 32px;
+	}
+
+	.h3-default {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,90 @@
+@use "./variables.scss" as *;
+@use "./_media-queries.scss" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+	margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+	list-style: none;
+	padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+img {
+	display: block;
+	max-inline-size: 100%;
+}
+
+html {
+	font-family: "Barlow", sans-serif;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: $light;
+}
+
+a {
+	text-decoration: none;
+}
+
+.d-none {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+    overflow: hidden;
+}
+
+.content {
+	position: relative;
+}
+
+@include media-lg {
+    .content {
+        width: 1440px;
+    }
+}
+
+@include media-md {
+    .content {
+        width: 1140px;
+    }
+}
+
+@include media-sm {
+    .content {
+        width: 720px;
+    }
+}
+
+@include media-xs {
+    .content {
+        width: 340px;
+    }
+}

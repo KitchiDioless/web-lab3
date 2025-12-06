@@ -1,0 +1,30 @@
+@use "./_colors.scss" as *;
+@use "./_breakpoints.scss" as *;
+@use "./_media-queries.scss" as *;
+
+@mixin elements-container {
+	display: grid;
+	justify-content: space-between;
+	position: relative;
+	
+	&::before {
+		content: '';
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		border-top: 1px solid $dark;
+		border-left: 1px solid $dark;
+	}
+
+	@include media-mobile {
+		padding: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+}
+

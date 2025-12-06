@@ -1,0 +1,37 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/_media-queries.scss" as *;
+@use "./components/hero-section.component.scss";
+@use "./components/about-preview-section.component.scss";
+@use "./components/works-gallery-section.component.scss";
+
+@include media-lg {
+	.promo {
+		.get-in-touch {
+			margin-bottom: 100px;
+		}
+	}
+}
+
+@include media-md {
+	.promo {
+		.get-in-touch {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@include media-sm {
+	.promo {
+		.get-in-touch {
+			margin-bottom: 60px;
+		}
+	}
+}
+
+@include media-xs {
+	.promo {
+		.get-in-touch {
+			margin-bottom: 60px;
+		}
+	}
+}

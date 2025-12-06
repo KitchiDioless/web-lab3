@@ -1,0 +1,32 @@
+@use "./_breakpoints.scss" as *;
+
+@mixin media-lg {
+	@media only screen and (min-width: $lg) {
+		@content;
+	}
+}
+
+@mixin media-md {
+	@media only screen and (min-width: $md) and (max-width: calc($lg - $eps)) {
+		@content;
+	}
+}
+
+@mixin media-sm {
+	@media only screen and (min-width: $sm) and (max-width: calc($md - $eps)) {
+		@content;
+	}
+}
+
+@mixin media-xs {
+	@media only screen and (min-width: $xs) and (max-width: calc($sm - $eps)) {
+		@content;
+	}
+}
+
+@mixin media-mobile {
+	@media only screen and (min-width: $xs) and (max-width: calc($sm - $eps)) {
+		@content;
+	}
+}
+

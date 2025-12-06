@@ -1,0 +1,36 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/_media-queries.scss" as *;
+@use "./components/about-story.component.scss";
+@use "./components/about-find-us.component.scss";
+
+@include media-lg {
+    .about {
+        .get-in-touch {
+            margin: 100px 0;
+        }
+    }
+}
+
+@include media-md {
+    .about {
+        .get-in-touch {
+            margin: 60px 0;
+        }
+    }
+}
+
+@include media-sm {
+    .about {
+        .get-in-touch {
+            margin: 60px 0;
+        }
+    }
+}
+
+@include media-xs {
+    .about {
+        .get-in-touch {
+            margin: 60px 0;
+        }
+    }
+}

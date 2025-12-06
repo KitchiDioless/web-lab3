@@ -1,0 +1,30 @@
+@use "./_colors.scss" as *;
+
+@mixin text-input {
+	border: 1px solid #E2E1E5;
+	outline: none;
+	border-radius: 2px;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 10px 15px;
+	transition: 0.05s linear;
+	
+	&::placeholder {
+		color: $ui-disabled;
+		font-size: 14px;
+	}
+	
+	&--bad {
+		color: $ui-error;
+		border-color: $ui-error;
+
+		&::placeholder {
+			color: $ui-error;
+		}
+	}
+	
+	&:hover, &:focus {
+		border-color: $dark;
+	}
+}
+

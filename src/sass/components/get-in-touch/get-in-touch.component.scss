@@ -1,0 +1,158 @@
+@use "/src/sass/base/variables.scss" as *;
+@use "/src/sass/base/_media-queries.scss" as *;
+
+.get-in-touch {
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__image {
+            box-shadow: $default-box-shadow;
+        }
+
+        &__form {
+            .text-container, .textarea-container {
+                margin-bottom: 8px;
+            }
+
+            &__text-input {
+                width: 300px;
+            }
+            &__last-row {
+                height: 88px;
+    
+                &__inputs {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                &__corner-img {
+                    height: 85px;
+                    width: 85px;
+                }
+            }
+        }
+    }
+}
+
+@include media-lg {
+    .get-in-touch {
+        &__title {
+            margin-bottom: 88px;
+        }
+        &__content {
+            &__image {
+                width: 573px;
+                height: 356px;
+            }
+            &__form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                width: 645px;
+                margin-right: 75px;
+
+                .textarea-container {
+                    grid-column: span 2;
+                }
+
+                &__text-input {
+                    width: 300px;
+                }
+                &__last-row {
+                    grid-column: span 2;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@include media-md {
+    .get-in-touch {
+        margin-bottom: 60px;
+
+        &__title {
+            margin-bottom: 88px;
+        }
+        &__content {
+            display: flex;
+            justify-content: space-between;
+
+            &__image {
+                width: 550px;
+                height: 341.76px;
+            }
+
+            &__form {
+                width: 550px;
+
+                &__last-row {
+                    grid-column: span 2;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@include media-sm {
+    .get-in-touch {
+        &__title {
+            margin-bottom: 55px;
+        }
+        &__content {
+            display: flex;
+            justify-content: flex-end;
+
+            &__image-container {
+                display: none;
+            }
+
+            &__form {
+                width: 696px;
+
+                &__text-input {
+                    width: 300px;
+                }
+                &__last-row {
+                    grid-column: span 2;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+
+@include media-xs {
+    .get-in-touch {
+        &__content {
+            &__title {
+                margin-bottom: 65px;
+            }
+            &__image {
+                display: none;
+            }
+            &__form {
+                width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+
+                &__text-input {
+                    width: 100%;
+                }
+                &__last-row__corner-img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
