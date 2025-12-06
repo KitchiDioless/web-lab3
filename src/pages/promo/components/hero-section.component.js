@@ -1,8 +1,9 @@
 import ceramicVase from "/src/img/promo/hero-vase.jpg";
+import { BASE_URL } from "../../../config/constants.js";
 
 class HeroSection extends HTMLElement {
     connectedCallback() {
-        const baseUrl = import.meta.env.BASE_URL;
+        const baseUrl = BASE_URL;
         this.innerHTML = `
             <section class="promo__section-1">
                 <div class="container">

@@ -1,4 +1,5 @@
 import x from "/src/icons/x.svg";
+import { BASE_URL } from "../../config/constants.js";
 
 class HeaderMenuComponent extends HTMLElement {
     menuHiddenField = true;
@@ -33,7 +34,7 @@ class HeaderMenuComponent extends HTMLElement {
     }
 
     render() {
-        const baseUrl = import.meta.env.BASE_URL;
+        const baseUrl = BASE_URL;
 
         this.innerHTML = `
             <div class="header__menu${ this.menuHidden ? " hidden" : "" }">

@@ -1,9 +1,10 @@
 import "./header-menu.component";
 import logo from "/src/logo/logo.png";
+import { BASE_URL } from "../../config/constants.js";
 
 class HeaderComponent extends HTMLElement {
     render() {
-        const baseUrl = import.meta.env.BASE_URL;
+        const baseUrl = BASE_URL;
         this.innerHTML = `
             <header class="header">
                 <div class="burger"><span></span><span></span><span></span></div>

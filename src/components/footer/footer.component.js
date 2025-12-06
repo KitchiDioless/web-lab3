@@ -1,7 +1,8 @@
+import { BASE_URL } from "../../config/constants.js";
 
 class FooterComponent extends HTMLElement {
     connectedCallback() {
-        const baseUrl = import.meta.env.BASE_URL;
+        const baseUrl = BASE_URL;
         this.innerHTML = `
             <footer class="footer">
                 <div class="container">
